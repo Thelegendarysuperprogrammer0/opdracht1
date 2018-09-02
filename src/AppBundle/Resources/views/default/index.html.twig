@@ -1,0 +1,31 @@
+{% extends '@App/base.html.twig' %}
+{% block body %}
+
+    {% if is_granted("ROLE_ADMIN") %}
+    <table id="main" class="table-fixed" id="myTable" width="100%">
+        <tbody>
+        <tr>
+            <td class="dark-bg">
+                <ul class="jquery-clock small white" data-jquery-clock="">
+                    <li class="jquery-clock-pin"></li>
+
+                    <li class="jquery-clock-sec"></li>
+
+                    <li class="jquery-clock-min"></li>
+
+                    <li class="jquery-clock-hour"></li>
+                </ul>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {% else %}
+        {% if app.User %}
+            <h1 class="user-title">Sorry {{ app.User }}, je bent geen admin</h1>
+        {% else %}
+            <h1 class="user-title">Je bent nog niet ingelogd</h1>
+        {% endif %}
+    {% endif %}
+
+{% endblock %}
+{% block fos_user_content %}{% endblock %}

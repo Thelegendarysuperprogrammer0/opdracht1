@@ -1,0 +1,151 @@
+html, body
+{
+    height: 100%;
+    margin: 0;
+}
+
+.table-fixed {
+    table-layout: fixed;
+}
+
+#main {
+    height: 100%;
+}
+#main td {
+    text-align: center;
+}
+
+.dark-bg {
+    background:  #1c1c1c;
+    color: #fff;
+}
+
+.transitions {
+    -webkit-transition: 	1s all;
+    -moz-transition: 	1s all;
+    -ms-transition: 	1s all;
+    -o-transition: 	1s all;
+    transition: 	1s all;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.half-width.opened {
+    width: 80%;
+}
+
+.pos-rel {
+    position: relative;
+}
+
+.abs-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+}
+
+.jquery-clock {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    background-image: url(http://pietrasiak.com/images/clock.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+.jquery-clock.medium {
+    width: 300px;
+    height: 300px;
+}
+
+.jquery-clock.small {
+    width: 500px;
+    height: 500px;
+}
+
+.jquery-clock-sec, .jquery-clock-min, .jquery-clock-hour {
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    top: 0px;
+    left: 45%;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.jquery-clock-sec {
+    background-image: url(http://pietrasiak.com/images/sechand.png);
+    z-index: 3;
+}
+
+.jquery-clock-min {
+    background-image: url(http://pietrasiak.com/images/minhand.png);
+    z-index: 2;
+}
+
+.jquery-clock-hour {
+    background-image: url(http://pietrasiak.com/images/hourhand.png);
+    z-index: 1;
+}
+
+.jquery-clock.white {
+    background-image: url(http://pietrasiak.com/images/clock-white.png);
+}
+
+.jquery-clock.white .jquery-clock-sec {
+    background-image: url(http://pietrasiak.com/images/sechand-white.png);
+    z-index: 3;
+}
+
+.jquery-clock.white .jquery-clock-min {
+    background-image: url(http://pietrasiak.com/images/minhand-white.png);
+    z-index: 2;
+}
+
+.jquery-clock.white .jquery-clock-hour {
+    background-image: url(http://pietrasiak.com/images/hourhand-white.png);
+    z-index: 1;
+}
+
+.jquery-clock-pin {
+    position: absolute;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    height: 3%;
+    width: 3%;
+    z-index: 10;
+    border-radius: 50%;
+    margin: -1.5%;
+}
+
+.jquery-clock.white .jquery-clock-pin {
+    background-color: #000;
+}
+
+.jquery-clock-transitions {
+    -webkit-transition: all 1s cubic-bezier(.01,1.81,0,.88) ;
+    -moz-transition: all 1s cubic-bezier(.01,1.81,0,.88) ;
+    -o-transition: all 1s cubic-bezier(.01,1.81,0,.88) ;
+}
+
+.pos-rel:hover {
+    -webkit-opacity: 0.2;
+}
+
+.user-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
